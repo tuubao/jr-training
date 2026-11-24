@@ -1,0 +1,29 @@
+{
+  "skill_name": "jr-training",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Please finish my training report. The lab guide is on the desktop as VLAN-guide.docx, and the result screenshots are ping.png and vlan-config.png, also on the desktop.",
+      "expected_output": "Ask only in Chinese for course name, experiment name, student name, date, lab room, and instructor. The question itself contains no English. Do not create a Word file yet.",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "Write the training report. Course: Computer Networks. Experiment: VLAN division. Student: Zhang San. Date: 2026-10-12. Lab: Network lab. Instructor: Li. The guide says the goal is to configure a VLAN and let hosts in the same VLAN communicate; the equipment is one switch and two PCs; the step is to create VLAN 10 and assign e0/0/1 to it; the result is that the two PCs can ping each other. The screenshot ping.png shows a successful ping.",
+      "expected_output": "A file named VLAN划分.docx on the desktop if the experiment name is the Chinese title, or the given experiment name. Cover fields and the closing date are filled, body points are rephrased, the picture is in the matching section, the comment is within two lines, the signature is blank, and Word/WPS pagination confirms one body red check on physical pages 1 through N-1, no red check on the final page, and no repeating header check.",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "Complete the training report and skip the cover information. The guide is one sentence: use an oscilloscope to observe the rectifier waveform and record whether the output is smooth. There are no pictures.",
+      "expected_output": "Do not ask for the cover again. Save 实训报告.docx on the desktop. Cover fields and the closing date stay blank. The body is rephrased into points. There is no empty figure. A one-page report has no red check; a longer report has checks only before the last physical page. No repeating header check is used.",
+      "files": []
+    },
+    {
+      "id": 4,
+      "prompt": "生成一份多页实训报告，最后一页包含结果截图、问题讨论和教师评语。前面有纯文字页和截图页。",
+      "expected_output": "按 Word/WPS 实际物理分页在第1页至倒数第2页各放置一个红勾；末页即使有截图也没有红勾。无重复页眉红勾，评语、签名区域及模板不变。",
+      "files": []
+    }
+  ]
+}
